@@ -1,4 +1,4 @@
-package com.learning.base;
+package com.learning.model.base;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

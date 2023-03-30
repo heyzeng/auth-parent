@@ -1,6 +1,6 @@
 //
 //
-package com.learning.vo;
+package com.learning.model.vo;
 
 import java.io.Serializable;
 

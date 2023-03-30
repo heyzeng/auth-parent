@@ -1,4 +1,4 @@
-package com.learning.vo;
+package com.learning.model.vo;
 
 
 import io.swagger.annotations.ApiModel;

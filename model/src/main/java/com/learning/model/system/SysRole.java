@@ -1,8 +1,8 @@
-package com.learning.system;
+package com.learning.model.system;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.learning.base.BaseEntity;
+import com.learning.model.base.BaseEntity;
 import lombok.Data;
 
 
