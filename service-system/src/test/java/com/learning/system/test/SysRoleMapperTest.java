@@ -2,12 +2,14 @@ package com.learning.system.test;
 
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.learning.model.system.SysRole;
 import com.learning.system.mapper.SysRoleMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,13 +32,70 @@ public class SysRoleMapperTest {
     //创建com.xxx.xxx.test
     //bug:java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration,
     // you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+    // 1 查看所有数据
     @Test
-    public void findAll(){
+    public void findAll() {
         log.info("select all");
         List<SysRole> user = sysRoleMapper.selectList(null);
-        for (SysRole sysRole: user) {
-            log.info("sysRole",sysRole);
+        for (SysRole sysRole : user) {
+            log.info("sysRole", sysRole);
         }
+    }
+
+    // 2 插入数据
+    @Test
+    public void testInsert() {
+        SysRole sysRole = new SysRole();
+        sysRole.setRoleName("test");
+        sysRole.setRoleCode("test");
+        sysRole.setDescription("test");
+        int insert = sysRoleMapper.insert(sysRole);
+        log.info("insert", insert);
+    }
+
+    // 3 更新
+    @Test
+    public void testUpdate() {
+        //查找id
+        SysRole sysRole = sysRoleMapper.selectById(8);
+        //修改数据
+//        sysRole.setDescription("2023.3.31");
+        sysRole.setRoleCode("test");
+        //调用方法进行修改
+        sysRoleMapper.updateById(sysRole);
+    }
+
+    // 4 id删除
+    @Test
+    public void testIdDelete() {
+        int deleteById = sysRoleMapper.deleteById(10);
+    }
+
+    // 5 批量删除
+    @Test
+    public void testBatchDelete() {
+        sysRoleMapper.deleteBatchIds(Arrays.asList(10, 11, 12));
+    }
+
+    // 6 条件查找
+    @Test
+    public void testConditionSelect() {
+
+        //QueryWrapper是MyBatis Plus中的一个条件构造器，用于封装查询条件，生成SQL的where语句12。
+        // 它继承自AbstractWrapper，可以通过new QueryWrapper().lambda()方法获取LambdaQueryWrapper3
+        QueryWrapper<SysRole> sysRoleQueryWrapper = new QueryWrapper<>();
+        sysRoleQueryWrapper.eq("role_code", "test");//设置等于查询条件
+        List<SysRole> sysRoles = sysRoleMapper.selectList(sysRoleQueryWrapper);//调用mapper接口的selectList方法，传入sysRoleQueryWrapper对象
+        log.info("s", sysRoles);
+    }
+
+    // 7 条件删除
+    @Test
+    public void testConditionDelete() {
+
+        QueryWrapper<SysRole> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("role_code", "COMMON");
+        sysRoleMapper.delete(queryWrapper);
 
     }
 }
