@@ -51,5 +51,3 @@ z
 Jservice-system/src/main/java/com/learning/system/mapper/SysRoleMapper.java,c/7/c77fade2c3457c8f5b839bfdac4dbfc0e867dadc
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-k
-;model/src/main/java/com/learning/model/base/BaseEntity.java,c/7/c7b0fec2ec9ee6b03c120e99459c21c403b84b4b
