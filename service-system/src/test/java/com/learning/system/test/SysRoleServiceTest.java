@@ -23,15 +23,15 @@ public class SysRoleServiceTest {
     private SysRoleService sysRoleService;
 
     //日志
-    Log log =  LogFactory.get();
+    Log log = LogFactory.get();
 
     @Test
     public void findAll() {
 
         log.info("=====findAll=====");
         List<SysRole> list = sysRoleService.list();
-        for (SysRole sysRole: list) {
-            log.info("list",sysRole);
+        for (SysRole sysRole : list) {
+            log.info("list", sysRole);
         }
     }
 
@@ -45,7 +45,7 @@ public class SysRoleServiceTest {
         sysRole.setRoleName("one");
 
         boolean b = sysRoleService.save(sysRole);
-        log.info("testResult",b);
+        log.info("testResult", b);
     }
 
     @Test
@@ -61,7 +61,7 @@ public class SysRoleServiceTest {
     }
 
     @Test
-    public void  testBatchDelete(){
+    public void testBatchDelete() {
         boolean b = sysRoleService.removeByIds(Arrays.asList(1, 2));
     }
 
@@ -69,17 +69,17 @@ public class SysRoleServiceTest {
     public void testConditionFind() {
 
         QueryWrapper<SysRole> sysRoleQueryWrapper = new QueryWrapper<>();
-        sysRoleQueryWrapper.eq("role_name","two");
+        sysRoleQueryWrapper.eq("role_name", "two");
 
         List<SysRole> testConditionFind = sysRoleService.list(sysRoleQueryWrapper);
-        log.info("testConditionFind",testConditionFind);
+        log.info("testConditionFind", testConditionFind);
     }
 
     @Test
     public void testConditionDelete() {
 
         QueryWrapper<SysRole> sysRoleQueryWrapper = new QueryWrapper<>();
-        sysRoleQueryWrapper.eq("role_name","two");
+        sysRoleQueryWrapper.eq("role_name", "two");
 
         sysRoleService.remove(sysRoleQueryWrapper);
     }
