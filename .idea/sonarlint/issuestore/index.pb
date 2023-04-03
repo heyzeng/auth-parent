@@ -3,8 +3,6 @@
 common/pom.xml,4/8/488bdbea7e8b73c44bd2a54e63f6012f10969196
 J
 common/common-util/pom.xml,e/1/e11c9af1f3f075911eeeadc65f502a18f63de327
-K
-common/service-util/pom.xml,7/b/7bf4ce2572b7ec64d7f93cfb8da490a785c0d1ed
 j
 :model/src/main/java/com/learning/model/system/SysPost.java,1/6/16a29137b0f7f1fb6bcba2b6c51299a5cd2f46ba
 j
