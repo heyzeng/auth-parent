@@ -35,15 +35,11 @@ m
 =model/src/main/java/com/learning/model/vo/SysPostQueryVo.java,8/d/8dc8a8dbe836da59cb61677d545a9e9ac75f8a0d
 p
 @model/src/main/java/com/learning/model/vo/SysOperLogQueryVo.java,9/d/9db48bfe9c77b346f39e73dbf77a4565da71beab
-m
-=model/src/main/java/com/learning/model/vo/SysRoleQueryVo.java,8/4/847b12181ebcb2fed9d39404685000dd40073c7f
 =
 model/pom.xml,8/c/8ca5b0c27ca750eb5be7a77252c19a67e5c88065
 j
 :model/src/main/java/com/learning/model/system/SysDept.java,9/0/901ae5fd4f470734f382a1313a4ddb314ab2fcd5
 F
 service-system/pom.xml,8/a/8a6ab5e85282dae9b91d876cd349455111788e1f
-z
-Jservice-system/src/main/java/com/learning/system/mapper/SysRoleMapper.java,c/7/c77fade2c3457c8f5b839bfdac4dbfc0e867dadc
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
