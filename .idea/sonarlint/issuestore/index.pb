@@ -43,3 +43,27 @@ F
 service-system/pom.xml,8/a/8a6ab5e85282dae9b91d876cd349455111788e1f
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+k
+;model/src/main/java/com/learning/model/base/BaseEntity.java,c/7/c7b0fec2ec9ee6b03c120e99459c21c403b84b4b
+|
+Lservice-system/src/test/java/com/learning/system/test/SysRoleMapperTest.java,e/0/e0d6286f1d8bfd4422f679c684764972e39fe532
+}
+Mservice-system/src/test/java/com/learning/system/test/SysRoleServiceTest.java,b/a/baed6760c90feeb79dba79a21b17bc6cb402c250
+K
+common/service-util/pom.xml,7/b/7bf4ce2572b7ec64d7f93cfb8da490a785c0d1ed
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+v
+Fcommon/common-util/src/main/java/com/learning/common/GenericClass.java,9/0/9060b4487670c3406dd97cf16037048e64f3aab5
+
+Ocommon/service-util/src/main/java/com/learning/system/config/Knife4jConfig.java,a/2/a29896f3e18faa1c1c2facd26f9972b4846d955d
+ƒ
+Scommon/service-util/src/main/java/com/learning/system/config/MybatisPlusConfig.java,c/8/c8999c89b7619c80b84a3802a7f720b1e39cf7d0
+w
+Gcommon/common-util/src/main/java/com/learning/common/GenericMethod.java,8/b/8b76aefa345c2d33eab2ede4a64e169e382a3de9
+m
+=model/src/main/java/com/learning/model/vo/SysRoleQueryVo.java,8/4/847b12181ebcb2fed9d39404685000dd40073c7f
+…
+Uservice-system/src/main/java/com/learning/system/service/impl/SysRoleServiceImpl.java,5/d/5dbac6027f0fce962876a1267d048e5506342dad
+|
+Lservice-system/src/main/java/com/learning/system/service/SysRoleService.java,a/e/ae550f664bb37fadb432d873fdd49b5d15d117ea

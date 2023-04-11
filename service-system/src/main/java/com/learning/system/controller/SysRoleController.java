@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.learning.common.reslut.Result;
 import com.learning.model.system.SysRole;
 import com.learning.model.vo.SysRoleQueryVo;
+import com.learning.system.exception.CustomException;
 import com.learning.system.service.SysRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -52,6 +53,13 @@ public class SysRoleController {
     protected Result<List<SysRole>> findAll() {
         List<SysRole> roleList = sysRoleService.list();
 //        return roleList;
+        //测试自定义异常
+        try {
+            int a = 10 / 0;
+        } catch (Exception e) {
+            throw new CustomException(20001,"自定义异常");
+        }
+
         return Result.ok(roleList);
     }
 }
