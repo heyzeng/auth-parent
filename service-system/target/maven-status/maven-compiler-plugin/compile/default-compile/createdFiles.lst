@@ -1,0 +1,5 @@
+com/learning/system/service/impl/SysRoleServiceImpl.class
+com/learning/system/service/SysRoleService.class
+com/learning/system/controller/SysRoleController.class
+com/learning/system/mapper/SysRoleMapper.class
+com/learning/system/ServiceAuthApplication.class

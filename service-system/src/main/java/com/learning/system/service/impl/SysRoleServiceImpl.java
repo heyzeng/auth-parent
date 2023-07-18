@@ -21,4 +21,8 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> impl
         IPage<SysRole> pageModel = baseMapper.selectPage(pageParam, sysRoleQueryVo);
         return pageModel;
     }
+
+    //获取用户的角色数据
+
+    // 用户分配角色
 }

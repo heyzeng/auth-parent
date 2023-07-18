@@ -85,6 +85,4 @@ public class Result<T> {
         this.setCode(code);
         return this;
     }
-
-
 }
