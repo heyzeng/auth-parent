@@ -54,11 +54,11 @@ public class IndexController {
     @GetMapping("/info")
     public Result info(){
 
-        HashMap<String, Object> infoMap = new HashMap<>();
-        infoMap.put("roles","admin");
+        Map<String, Object> infoMap = new HashMap<>();
+        infoMap.put("roles","[admin]");
         infoMap.put("introduction","I am a super administrator");
         infoMap.put("avatar","https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
-        infoMap.put("name","Admin");
+        infoMap.put("name","Admin jude");
         return Result.ok(infoMap);
     }
 
