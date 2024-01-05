@@ -46,9 +46,9 @@ public class SysRoleMapperTest {
     @Test
     public void testInsert() {
         SysRole sysRole = new SysRole();
-        sysRole.setRoleName("test");
-        sysRole.setRoleCode("test");
-        sysRole.setDescription("test");
+        sysRole.setRoleName("test1");
+        sysRole.setRoleCode("test1");
+        sysRole.setDescription("test1");
         int insert = sysRoleMapper.insert(sysRole);
         log.info("insert", insert);
     }
